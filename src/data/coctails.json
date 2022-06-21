@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "Mojito",
+    "image": "./images/mojito.jpg",
+    "type": "Alkoholowy",
+    "glass": "?",
+    "ingredients":
+            [
+              {
+                "name": "Limonka",
+                "amount": 3,
+                "counter": "sztuk"
+              },
+              {
+                "name": "Wódka",
+                "amount": 40,
+                "counter": "ml"
+              }
+            ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok1",
+      "krok2",
+      "krok3"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pina Colada",
+    "image": "./images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients":
+    [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
+  }
+]

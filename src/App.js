@@ -1,9 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import coctails from "./data/coctails.json";
+
 
 function App() {
   return (
     <div className="App">
+      {
+        coctails.map((coctail, index) =>{
+          return (
+              <div key={index}>
+                <p>{coctail.name}</p>
+                <p>{coctail.type}</p>
+              </div>
+          )
+        })
+      }
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
