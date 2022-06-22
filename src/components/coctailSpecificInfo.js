@@ -1,14 +1,13 @@
 import React from "react";
+import Ingredient from "./ingredients/ingredient";
 import coctails from "../data/coctails.json";
-import "../styles/coctailsList.css";
-import Ingredient from "../components/ingredients/ingredient"
-import Steps from "./steps/steps";
+import Steps from "./steps/steps.js"
 
-export default function ShowAllCoctails(){
+export default function CoctailSpecificInfo({id}){
     return(
         coctails.map((coctail, index) => {
             return(
-                <div key={index}>
+                <div key={id}>
                     <img src={coctail.image} alt={"zdjecie drinka"}/>
                     <p>Drink: {coctail.name}</p>
                     <p>Typ drinka: {coctail.type}</p>
