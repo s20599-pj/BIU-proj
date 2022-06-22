@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Mojito",
-    "image": "./images/mojito.jpg",
+    "image": "/images/mojito.jpg",
     "type": "Alkoholowy",
     "glass": "?",
     "ingredients":
