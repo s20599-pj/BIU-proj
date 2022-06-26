@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
 
         <div className="App">
-
+          <Link to={"/coctails"}>lista</Link>
         </div>
     );
   }

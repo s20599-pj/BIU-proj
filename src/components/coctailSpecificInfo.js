@@ -1,21 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Ingredient from "./ingredients/ingredient";
 import coctails from "../data/coctails.json";
 import Steps from "./steps/steps.js"
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 
-export default function CoctailSpecificInfo({id}){
+export default function CoctailSpecificInfo(){
+    let { coctailId } = useParams();
+
     return(
-                <div key={id}>
-                    <img src={coctails[id-1].image} alt={"zdjecie drinka"}/>
-                    <p>Drink: {coctails[id-1].name}</p>
-                    <p>Typ drinka: {coctails[id-1].type}</p>
+                <div key={coctailId}>
+                    <img src={coctails[coctailId-1].image} alt={"zdjecie drinka"}/>
+                    <p>Drink: {coctails[coctailId-1].name}</p>
+                    <p>Typ drinka: {coctails[coctailId-1].type}</p>
                     <p>Skladniki do drinka:</p>
-                    <Ingredient ingredientList={coctails[id-1].ingredients}/>
+                    <Ingredient ingredientList={coctails[coctailId-1].ingredients}/>
                     <p>Jak zrobić drinka:</p>
-                    <Steps stepsList={coctails[id-1].steps}/>
-                    huheuheuheueheuh
-                    <Link to={"/"}>Cofnij do strony głównej</Link>
+                    <Steps stepsList={coctails[coctailId-1].steps}/>
+                    <Link to={"/coctails"}>Cofnij do listy drinków</Link>
                 </div>
     )
 }

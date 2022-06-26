@@ -1,19 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter,Route,Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ShowAllCoctails from './components/coctails'
 import CoctailSpecificInfo from "./components/coctailSpecificInfo";
+import Coctails from "./data/coctails.json"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<ShowAllCoctails />}/>
-            <Route path={"/coctail/1"} element={<CoctailSpecificInfo id={1} /> }/>
+            <Route path="/" element={<App />} />
+            <Route path={"/coctails"} element={<ShowAllCoctails /> } />
+            <Route path={"/coctails/:coctailId"} element={<CoctailSpecificInfo />}/>
         </Routes>
 
     </BrowserRouter>
