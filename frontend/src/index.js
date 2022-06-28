@@ -6,7 +6,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ShowAllCoctails from './components/coctails'
 import CoctailSpecificInfo from "./components/coctailSpecificInfo";
-import Coctails from "./data/coctails.json"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

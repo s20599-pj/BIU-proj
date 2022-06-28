@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "coctail_id": 1,
+    "author": "nocnykebab1986",
+    "date": "26-06-2022",
+    "description": "fajny drink"
+  },
+  {
+    "id": 2,
+    "coctail_id": 1,
+    "author": "fortnitegurom2014",
+    "date": "25-06-2022",
+    "description": "nudny drink"
+  },
+  {
+    "id": 2,
+    "coctail_id": 2,
+    "author": "fortnitegurom2014",
+    "date": "25-06-2022",
+    "description": "nudny drinkqq"
+  }
+]

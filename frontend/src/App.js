@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import coctails from "./data/coctails.json";
 import React from "react";
 
 import {

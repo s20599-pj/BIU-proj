@@ -35,7 +35,50 @@
   {
     "id": 2,
     "name": "Pina Colada",
-    "image": "./images/pina-colada.jpg",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients":
+    [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
     "type": "Alkoholowy",
     "glass": "???",
     "ingredients":
