@@ -1,23 +1,13 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import "../styles/coctailsList.css";
-import Ingredient from "./ingredients/ingredient"
-import Steps from "./steps/steps";
 import {Link} from "react-router-dom";
-import {useParams} from "react-router-dom";
-import {useGlobalContext} from '../globalFunctions'
+import {useGlobalContext} from '../globalFunctions';
 
 export default function ShowAllCoctails(){
-    let params = useParams();
-
-    const {coctails} = useGlobalContext();
-
-    const getAllCoctails = () => {
-        coctails();
-    }
+    const { coctails} = useGlobalContext();
 
     return(
-        getAllCoctails.map((coctail, index) => {
-
+        coctails.map((coctail, index) => {
             return(
                 <div key={index}>
                     <img src={coctail.image} alt={"zdjecie drinka"}/>

@@ -6,18 +6,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ShowAllCoctails from './components/coctails'
 import CoctailSpecificInfo from "./components/coctailSpecificInfo";
+import GlobalContextProvider from "./globalFunctions";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<App />} />
-            <Route path={"/coctails"} element={<ShowAllCoctails /> } />
-            <Route path={"/coctails/:coctailId"} element={<CoctailSpecificInfo />}/>
-        </Routes>
+    <GlobalContextProvider>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<App />} />
+                <Route path={"/coctails"} element={<ShowAllCoctails /> } />
+                <Route path={"/coctails/:coctailId"} element={<CoctailSpecificInfo />}/>
+            </Routes>
+        </BrowserRouter>
+    </GlobalContextProvider>
 
-    </BrowserRouter>
 
 );
 

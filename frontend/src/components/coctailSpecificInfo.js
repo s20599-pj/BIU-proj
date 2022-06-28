@@ -1,28 +1,28 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Ingredient from "./ingredients/ingredient";
 import Steps from "./steps/steps.js"
 import {Link, useParams} from "react-router-dom";
 import ShowComments from "./comments/showComments";
 import AddComment from "./comments/addComment";
+import {useGlobalContext} from '../globalFunctions';
 
-
-export default function CoctailSpecificInfo({coctails}){
+export default function CoctailSpecificInfo(){
     let { coctailId } = useParams();
-    let currentCoctail = coctails[coctailId-1];
+    const {getSpecificCoctail} = useGlobalContext();
 
-
+    const coctailDetails = getSpecificCoctail(parseInt(coctailId));
 
     return(
                 <div key={coctailId}>
-                    <img src={currentCoctail.image} alt={"zdjecie drinka"}/>
-                    <p>Drink: {currentCoctail.name}</p>
-                    <p>Typ drinka: {currentCoctail.type}</p>
+                    <img src={coctailDetails.image} alt={"zdjecie drinka"}/>
+                    <p>Drink: {coctailDetails.name}</p>
+                    <p>Typ drinka: {coctailDetails.type}</p>
                     <p>Skladniki do drinka:</p>
-                    <Ingredient ingredientList={currentCoctail.ingredients}/>
+                    <Ingredient ingredientList={coctailDetails.ingredients}/>
                     <p>Jak zrobić drinka:</p>
-                    <Steps stepsList={currentCoctail.steps}/>
-                    <ShowComments coctail={currentCoctail} />
-                    <AddComment coctail={currentCoctail} />
+                    <Steps stepsList={coctailDetails.steps}/>
+                    <ShowComments coctail={coctailDetails} />
+                    <AddComment coctail={coctailDetails} />
                     <Link to={"/coctails"}>Cofnij do listy drinków</Link>
                 </div>
     )
