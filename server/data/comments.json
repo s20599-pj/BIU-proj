@@ -14,10 +14,24 @@
     "description": "nudny drink"
   },
   {
-    "id": 2,
+    "id": 3,
     "coctail_id": 2,
     "author": "fortnitegurom2014",
     "date": "25-06-2022",
+    "description": "nudny drinkqq"
+  },
+  {
+    "id": 4,
+    "coctail_id": 2,
+    "author": "fortnitegurom2014",
+    "date": "29-06-2022",
+    "description": "nudny drinkqq"
+  },
+  {
+    "id": 5,
+    "coctail_id": 2,
+    "author": "fortnitegurom2014",
+    "date": "29-06-2022",
     "description": "nudny drinkqq"
   }
 ]
