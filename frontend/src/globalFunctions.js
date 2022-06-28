@@ -17,15 +17,19 @@ export default function GlobalContextProvider({children}){
     }, []);
 
     const getSpecificCoctail = (id) => {
-        console.log(coctails.find((coctail) => coctail.id === id));
-        return coctails.find((coctail) => coctail.id === id)
+        return coctails.find((coctail) => coctail.id === id);
+    };
+
+    const getComments = (coctailId) => {
+        return comments.filter((comment) => comment.coctail_id === coctailId);
     }
 
     return (
         <GlobalContext.Provider
             value={{
                 coctails,
-                getSpecificCoctail
+                getSpecificCoctail,
+                getComments
             }}
             >
             {children}
