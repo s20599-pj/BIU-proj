@@ -19,7 +19,6 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-console.log(comments);
 
 app.get("/api/getCoctails", (req, res) => {
    res.send(coctails);
@@ -40,7 +39,7 @@ app.post("/api/saveComment", (req, res) => {
 
     const newComment = {
         "id": comments[comments.length-1].id+1,
-        "coctail_id": data.coctail_id,
+        "coctail_id": data.coctail_Id,
         "author": data.author,
         "date": getDate(),
         "description": data.description
