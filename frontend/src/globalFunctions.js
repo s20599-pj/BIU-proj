@@ -56,13 +56,50 @@ export default function GlobalContextProvider({children}){
             })
     }
 
+    const getRates = () => {
+
+    }
+    const sendRate = (coctail_id, ratings) => {
+        const rating = {
+            coctail_id: coctail_id,
+            ratings: ratings
+        }
+
+        const request = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(rating)
+        }
+
+        fetch("http://localhost:3001/api/saveRating", request)
+            .then(response => {
+                if(response.ok) {
+                    return response.json();
+                }
+                else {
+                    console.log(response.statusText);
+                }
+            })
+            .then(data => {
+                if(data){
+                    setCoctails(data);
+                    window.location.reload();
+                }
+                else{
+                    console.log("Server error - cannot add new rating");
+                }
+            })
+    }
+
     return (
         <GlobalContext.Provider
             value={{
                 coctails,
                 getSpecificCoctail,
                 getComments,
-                addComment
+                addComment,
+                getRates,
+                sendRate
             }}
             >
             {children}

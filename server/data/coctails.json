@@ -5,26 +5,30 @@
     "image": "/images/mojito.jpg",
     "type": "Alkoholowy",
     "glass": "?",
-    "ingredients":
-            [
-              {
-                "name": "Limonka",
-                "amount": 3,
-                "counter": "sztuk"
-              },
-              {
-                "name": "Wódka",
-                "amount": 40,
-                "counter": "ml"
-              }
-            ],
+    "ingredients": [
+      {
+        "name": "Limonka",
+        "amount": 3,
+        "counter": "sztuk"
+      },
+      {
+        "name": "Wódka",
+        "amount": 40,
+        "counter": "ml"
+      }
+    ],
     "ratings": [
       5,
       5,
       5,
       5,
       5,
-      5
+      5,
+      1,
+      1,
+      1,
+      3,
+      1
     ],
     "steps": [
       "krok1",
@@ -38,8 +42,7 @@
     "image": "/images/pina-colada.jpg",
     "type": "Alkoholowy",
     "glass": "???",
-    "ingredients":
-    [
+    "ingredients": [
       {
         "name": "rum",
         "amount": "30",
@@ -81,8 +84,7 @@
     "image": "/images/pina-colada.jpg",
     "type": "Alkoholowy",
     "glass": "???",
-    "ingredients":
-    [
+    "ingredients": [
       {
         "name": "rum",
         "amount": "30",

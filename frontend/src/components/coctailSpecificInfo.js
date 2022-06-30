@@ -5,6 +5,7 @@ import {Link, useParams} from "react-router-dom";
 import ShowComments from "./comments/showComments";
 import AddComment from "./comments/addComment";
 import {useGlobalContext} from '../globalFunctions';
+import Rating from "./rating";
 
 export default function CoctailSpecificInfo(){
     let { coctailId } = useParams();
@@ -15,6 +16,7 @@ export default function CoctailSpecificInfo(){
     return(
                 <div key={coctailId}>
                     <img src={coctailDetails.image} alt={"zdjecie drinka"}/>
+                    <Rating ratings={coctailDetails.ratings} coctail_id={coctailId} />
                     <p>Drink: {coctailDetails.name}</p>
                     <p>Typ drinka: {coctailDetails.type}</p>
                     <p>Skladniki do drinka:</p>

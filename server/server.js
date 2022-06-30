@@ -7,6 +7,7 @@ const coctails = require("./data/coctails.json");
 const server = http.createServer(app);
 const fs = require("fs");
 const bodyParser = require('body-parser')
+const path = require("path")
 
 const COMMENTS_PATH = "./data/comments.json";
 const COCTAILS_PATH = "./data/coctails.json";
@@ -51,6 +52,26 @@ app.post("/api/saveComment", (req, res) => {
     fs.writeFileSync(COMMENTS_PATH, toSave);
     res.send(toSave);
 });
+
+app.post("/api/saveRating", (req, res) => {
+    const data = req.body;
+    console.log(data);
+    const updateCoctailsRating = coctails.map((coctail) => {
+        if(coctail.id === parseInt(data.coctail_id))
+        {
+            coctail.ratings.push(data.ratings);
+        }
+
+        return coctail;
+    });
+    let toSave = JSON.stringify(updateCoctailsRating,null,2);
+    fs.writeFileSync(COCTAILS_PATH, toSave);
+    res.send(toSave);
+})
+
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'))
+})
 
 const getDate = () => {
     let today = new Date();
