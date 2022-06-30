@@ -6,6 +6,7 @@ export const useGlobalContext = () => useContext(GlobalContext);
 export default function GlobalContextProvider({children}){
     const [coctails, setCoctails] = useState(null);
     const [comments, setComments] = useState('');
+    const [searchBar, setSearchBar] = useState('');
 
     useEffect(() => {
         fetch("http://localhost:3001/api/getAll")
@@ -13,6 +14,7 @@ export default function GlobalContextProvider({children}){
             .then(data => {
                 setCoctails(data.coctail);
                 setComments(data.comments);
+                setSearchBar(data.coctail);
             })
     }, []);
 
@@ -91,15 +93,26 @@ export default function GlobalContextProvider({children}){
             })
     }
 
+    const setDefaultCoctails = () => {
+        fetch("http://localhost:3001/api/getAll")
+            .then(res => res.json())
+            .then(data => {
+                setCoctails(data.coctail);
+            })
+    }
+
     return (
         <GlobalContext.Provider
             value={{
                 coctails,
+                searchBar,
+                setCoctails,
                 getSpecificCoctail,
                 getComments,
                 addComment,
                 getRates,
-                sendRate
+                sendRate,
+                setDefaultCoctails
             }}
             >
             {children}
