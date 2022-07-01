@@ -442,5 +442,33 @@
       "krok22",
       "krok33"
     ]
+  },
+  {
+    "id": 12,
+    "name": "Smerfny hit",
+    "image": "/noPhoto.jpg",
+    "type": "Bezalkoholowy",
+    "glass": "Highball glass",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "10",
+        "amount": "ml",
+        "counter": "sok porzeczkowy"
+      },
+      {
+        "name": "100",
+        "amount": "ml",
+        "counter": "Sprite"
+      },
+      {
+        "name": "50",
+        "amount": "ml",
+        "counter": "Fanta"
+      }
+    ],
+    "steps": [
+      "Zmieszaj wszystko ze sobą."
+    ]
   }
 ]

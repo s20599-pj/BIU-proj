@@ -94,7 +94,6 @@ app.post("/api/saveRating", (req, res) => {
 
 app.post("/api/updateCoctail", upload.single("file"), (req, res) => {
     const data = JSON.parse(req.body.coctail);
-    console.log(data);
     const image = req.file;
     if(image !== undefined) {
         data.image = '/' + image.filename;
@@ -125,8 +124,9 @@ app.post("/api/updateCoctail", upload.single("file"), (req, res) => {
     res.send(dataToSave);
 })
 
-app.post('/api/createCoctail', upload.single("file"), (req, res) => {
+app.post('/api/addCoctail', upload.single("file"), (req, res) => {
     const data = JSON.parse(req.body.coctail);
+    console.log(data)
     const image = req.file;
     if (image !== undefined) {
         data.image = '/' + image.filename;
@@ -134,7 +134,7 @@ app.post('/api/createCoctail', upload.single("file"), (req, res) => {
         data.image = "/noPhoto.jpg";
     }
 
-    const newCoctail = createCoctail(reqData, true);
+    const newCoctail = createCoctail(data, true);
 
     coctails.sort((c1, c2) => {
         return c1.id - c2.id;
@@ -166,7 +166,7 @@ const createCoctail = (data, createNew) => {
     const ingredients = [];
     let nameIngr = "nameIngr"
     let amount = "amount";
-    let measurement = "measurement";
+    let counter = "counter";
     let ingredientsLength = Object.keys(data).filter((prop) => prop.includes(nameIngr)).length;
     for (let i = 0; i < ingredientsLength; i++) {
         if (data[nameIngr + i] !== "") {
