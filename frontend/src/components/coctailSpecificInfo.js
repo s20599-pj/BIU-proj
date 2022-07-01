@@ -25,7 +25,8 @@ export default function CoctailSpecificInfo(){
                     <Steps stepsList={coctailDetails.steps}/>
                     <ShowComments coctail={coctailDetails} />
                     <AddComment coctail={coctailDetails} />
-                    <Link to={"/coctails"}>Cofnij do listy drinków</Link>
+                    <Link to={"/coctails"}>Cofnij do listy drinków</Link><br/>
+                    <Link to={"/editCoctail/"+coctailId}>Edytuj drinka</Link>
                 </div>
     )
 }

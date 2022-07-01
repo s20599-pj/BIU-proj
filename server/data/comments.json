@@ -1,61 +1,460 @@
 [
   {
     "id": 1,
-    "coctail_id": 1,
-    "author": "nocnykebab1986",
-    "date": "26-06-2022",
-    "description": "fajny drink"
+    "name": "Mojito",
+    "image": "/images/mojito.jpg",
+    "type": "Alkoholowy",
+    "glass": "?",
+    "ingredients": [
+      {
+        "name": "Limonka",
+        "amount": 3,
+        "counter": "sztuk"
+      },
+      {
+        "name": "Wódka",
+        "amount": 40,
+        "counter": "ml"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      1,
+      1,
+      1,
+      3,
+      1
+    ],
+    "steps": [
+      "krok1",
+      "krok2",
+      "krok3"
+    ]
   },
   {
     "id": 2,
-    "coctail_id": 1,
-    "author": "fortnitegurom2014",
-    "date": "25-06-2022",
-    "description": "nudny drink"
+    "name": "Pina Colada",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      3
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
   },
   {
     "id": 3,
-    "coctail_id": 2,
-    "author": "fortnitegurom2014",
-    "date": "25-06-2022",
-    "description": "nudny drinkqq"
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
   },
   {
     "id": 4,
-    "coctail_id": 2,
-    "author": "fortnitegurom2014",
-    "date": "29-06-2022",
-    "description": "nudny drinkqq"
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
   },
   {
     "id": 5,
-    "coctail_id": 2,
-    "author": "fortnitegurom2014",
-    "date": "29-06-2022",
-    "description": "nudny drinkqq"
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
   },
   {
     "id": 6,
-    "date": "29-06-2022"
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
   },
   {
     "id": 7,
-    "author": "ngiodngiosio",
-    "date": "29-06-2022",
-    "description": "briogbsoinbgoisdngsodin"
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
   },
   {
     "id": 8,
-    "coctail_id": 1,
-    "author": "nngboidfnbiodfnio",
-    "date": "29-06-2022",
-    "description": "ndsgisngoisdngiosdngos"
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
   },
   {
     "id": 9,
-    "coctail_id": 3,
-    "author": "ibiofxnbisnboi",
-    "date": "29-06-2022",
-    "description": "GNSNGSOoisdngiosngoisngiosdngsod"
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Pina Colada2",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "???",
+    "ingredients": [
+      {
+        "name": "rum",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Ananas",
+        "amount": "30",
+        "counter": "plastry"
+      },
+      {
+        "name": "Kruszony lód",
+        "amount": "",
+        "counter": "plastry"
+      }
+    ],
+    "ratings": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "steps": [
+      "krok11",
+      "krok22",
+      "krok33"
+    ]
   }
 ]

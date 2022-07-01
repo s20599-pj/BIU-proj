@@ -2,21 +2,10 @@
   {
     "id": 1,
     "name": "Mojito",
-    "image": "/images/mojito.jpg",
+    "image": "/noPhoto.jpg",
     "type": "Alkoholowy",
-    "glass": "?",
-    "ingredients": [
-      {
-        "name": "Limonka",
-        "amount": 3,
-        "counter": "sztuk"
-      },
-      {
-        "name": "Wódka",
-        "amount": 40,
-        "counter": "ml"
-      }
-    ],
+    "glass": "Highball glass",
+    "ingredients": [],
     "ratings": [
       5,
       5,
@@ -31,9 +20,7 @@
       1
     ],
     "steps": [
-      "krok1",
-      "krok2",
-      "krok3"
+      "krok1krok2krok33."
     ]
   },
   {
