@@ -92,14 +92,15 @@ app.post("/api/saveRating", (req, res) => {
     console.log("Pomyslnie dodano ocene")
 })
 
-app.post("/api/updateCoctail", upload.single("file"), (req, res) => {
+app.post("/api/updateCoctail", upload.single("image"), (req, res) => {
     const data = JSON.parse(req.body.coctail);
     const image = req.file;
+    console.log(req.file)
     if(image !== undefined) {
         data.image = '/images/' + image.filename;
     }
     else{
-        data.image = "/images/placeholder.jpg"
+        data.image = "/images/placeholder.png"
     }
     const coctailToUpdate = createCoctail(data)
 
@@ -109,11 +110,8 @@ app.post("/api/updateCoctail", upload.single("file"), (req, res) => {
 
     const updatedCoctail = coctails.map((coctail) => {
         if (coctail.id === coctailToUpdate.id) {
-            console.log(image);
-            console.log(coctail.name.replace(/\s/g, ''));
-            console.log(coctailToUpdate.name.replace(/\s/g, ''));
             if (coctail.name.replace(/\s/g, '') !== coctailToUpdate.name.replace(/\s/g, '') && image === undefined) {
-                coctailToUpdate.image = "/images/placeholder.jpg";
+                coctailToUpdate.image = "/images/placeholder.png";
             }
             Object.assign(coctail, coctailToUpdate);
         }
@@ -124,14 +122,14 @@ app.post("/api/updateCoctail", upload.single("file"), (req, res) => {
     res.send(dataToSave);
 })
 
-app.post('/api/addCoctail', upload.single("file"), (req, res) => {
+app.post('/api/addCoctail', upload.single("image"), (req, res) => {
     const data = JSON.parse(req.body.coctail);
     console.log(data)
     const image = req.file;
     if (image !== undefined) {
         data.image = '/images/' + image.filename;
     } else {
-        data.image = "/images/placeholder.jpg";
+        data.image = "/images/placeholder.png";
     }
 
     const newCoctail = createCoctail(data, true);

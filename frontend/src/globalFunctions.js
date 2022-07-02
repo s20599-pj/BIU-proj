@@ -101,10 +101,10 @@ export default function GlobalContextProvider({children}){
 
     const saveCoctails = (coctail, toUpdate) => {
         const newData = new FormData();
-        const image = coctail.file;
+        const image = coctail.image[0];
         newData.append("coctail", JSON.stringify(coctail))
         newData.append("image", image)
-        delete coctail.image
+        delete coctail.image;
 
         const request = {
             method: 'POST',
