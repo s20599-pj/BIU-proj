@@ -26,9 +26,9 @@
   {
     "id": 2,
     "name": "Pina Colada",
-    "image": "/images/pina-colada.jpg",
+    "image": "/placeholder.jpg",
     "type": "Alkoholowy",
-    "glass": "???",
+    "glass": "Highball glass",
     "ingredients": [
       {
         "name": "rum",
@@ -49,6 +49,11 @@
         "name": "Kruszony lód",
         "amount": "",
         "counter": "plastry"
+      },
+      {
+        "name": "mango",
+        "amount": "",
+        "counter": ""
       }
     ],
     "ratings": [
@@ -60,59 +65,49 @@
       5
     ],
     "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
+      "krok11krok22krok33."
     ]
   },
   {
     "id": 3,
-    "name": "Smerfny hit",
-    "image": "/noPhoto.jpg",
-    "type": "Bezalkoholowy",
-    "glass": "Highball glass",
-    "ratings": [],
-    "ingredients": [
-      {
-        "name": "10",
-        "amount": "ml",
-        "counter": "sok porzeczkowy"
-      },
-      {
-        "name": "100",
-        "amount": "ml",
-        "counter": "Sprite"
-      },
-      {
-        "name": "50",
-        "amount": "ml",
-        "counter": "Fanta"
-      }
-    ],
-    "steps": [
-      "Zmieszaj wszystko ze sobą."
-    ]
-  },
-  {
-    "id": 4,
-    "name": "bngjsbngos",
-    "image": "/noPhoto.jpg",
+    "name": "Aperol Spritz",
+    "image": "/placeholder.jpg",
     "type": "Alkoholowy",
-    "glass": "bhvsvbsi",
+    "glass": "Highball glass",
     "ratings": [
-      5,
-      3,
       5
     ],
     "ingredients": [
       {
-        "name": "obnd",
-        "amount": "bvoj",
-        "counter": "vbodjz"
+        "name": "Prosecco",
+        "amount": "75",
+        "counter": "ml"
+      },
+      {
+        "name": "Aperol",
+        "amount": "50",
+        "counter": "ml"
+      },
+      {
+        "name": "Woda gazowana",
+        "amount": "25",
+        "counter": "ml"
+      },
+      {
+        "name": "Kostki lodu",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Opcjonalnie: Plasterki pomarańczy",
+        "amount": "",
+        "counter": ""
       }
     ],
     "steps": [
-      "bnsvubniusadbfuoasdbnfuoasdbafuonuo."
+      "Szklankę typu Lowball wypełnij kostkami lodu.",
+      "Dodaj 75ml mocno schłodzonego Prosecco, 50 ml Aperolu i 25ml wody gazowanej do kieliszka.",
+      "Udekoruj drink plasterkami pomarańczy - wedle uznania."
     ]
   }
 ]

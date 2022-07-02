@@ -48,15 +48,9 @@ export default function EditDrink(){
                      })
                     }
                 </select> </div>
-                <div>Rodzaj szkła: <select {...register('glass')} defaultValue={tempCoctail.glass} required>
-                    <option disabled defaultValue={tempCoctail.glass} selected />
-                    {coctailGlass.map((type, key) => {
-                        return(
-                            <option key={key} defaultValue={type}>{type}</option>
-                        )
-                    })
-                    }
-                </select> </div>
+                <div>Rodzaj szkła:
+                    <input type={"text"} {...register('glass')} required placeholder={"Podaj rodzaj szkła"} defaultValue={tempCoctail.glass}/>
+                </div>
                 <div>
                     Składniki:<br />
                     {tempIngredients.map((ingredient, key) => {

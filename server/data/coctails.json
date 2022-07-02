@@ -1,84 +1,418 @@
 [
   {
     "id": 1,
-    "name": "Mojito",
-    "image": "/images/mojito.jpg",
+    "name": "Aperol Spritz",
+    "image": "/images/aperol.jpg",
     "type": "Alkoholowy",
     "glass": "Highball glass",
-    "ingredients": [],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      1,
-      1,
-      1,
-      3,
-      1
-    ],
-    "steps": [
-      "krok1krok2krok33."
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Pina Colada",
-    "image": "/placeholder.jpg",
-    "type": "Alkoholowy",
-    "glass": "Highball glass",
+    "ratings": [],
     "ingredients": [
       {
-        "name": "rum",
-        "amount": "30",
+        "name": "Prosecco",
+        "amount": "75",
         "counter": "ml"
       },
       {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
+        "name": "Aperol",
+        "amount": "50",
         "counter": "ml"
       },
       {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
+        "name": "Woda gazowana",
+        "amount": "25",
+        "counter": "ml"
       },
       {
-        "name": "Kruszony lód",
+        "name": "Kostki lodu",
         "amount": "",
-        "counter": "plastry"
+        "counter": ""
       },
       {
-        "name": "mango",
+        "name": "Opcjonalnie: Plasterki pomarańczy",
         "amount": "",
         "counter": ""
       }
     ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
+    "steps": [
+      "Szklankę typu Lowball wypełnij kostkami lodu.",
+      "Dodaj 75ml mocno schłodzonego Prosecco, 50 ml Aperolu i 25ml wody gazowanej do kieliszka.",
+      "Udekoruj drink plasterkami pomarańczy - wedle uznania."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Tequila Sunrise",
+    "image": "/images/tequila-sunrise.jpg",
+    "type": "Alkoholowy",
+    "glass": "Cocktail glass",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "Tequila",
+        "amount": "60",
+        "counter": "ml"
+      },
+      {
+        "name": "Sok pomarańczowy",
+        "amount": "120",
+        "counter": "ml"
+      },
+      {
+        "name": "Syrop grenadina",
+        "amount": "10",
+        "counter": "ml"
+      },
+      {
+        "name": "Kostki lodu",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Opcjonalnie: Plasterki pomarańczy",
+        "amount": "",
+        "counter": ""
+      }
     ],
     "steps": [
-      "krok11krok22krok33."
+      "Tequile w przepisie można zastąpić wódką lub rumem.",
+      "Do shakera wrzucamy kostki lodu, 60ml tequili oraz sok pomarańczowy.",
+      "Całość mocno wstrząsnąć.",
+      "Wylewamy zawartość do wysokiej szklanki do koktajli, następnie wlewamy 10ml syropu grenadina.",
+      "Dekorujemy plasterkami pomarańczy według uznania."
     ]
   },
   {
     "id": 3,
-    "name": "Aperol Spritz",
-    "image": "/placeholder.jpg",
+    "name": "Cosmopolitan",
+    "image": "/images/Cosmopolitan.jpg",
     "type": "Alkoholowy",
-    "glass": "Highball glass",
+    "glass": "Martini glass",
     "ratings": [],
-    "ingredients": [],
+    "ingredients": [
+      {
+        "name": "Sok żurawinowy",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Wódka limonkowa",
+        "amount": "40",
+        "counter": "ml"
+      },
+      {
+        "name": "Sok z limonki",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Cointreau",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Opcjonalnie: Starta skórka z pomarańczy",
+        "amount": "",
+        "counter": ""
+      }
+    ],
     "steps": [
-      "Szklankę typu Lowball wypełnij kostkami lodu\nDodaj 75ml mocno schłodzonego Prosecco, 50 ml Aperolu i 25ml wody gazowanej do kieliszka.",
-      "Udekoruj drink plasterkami pomarańczy - wedle uznania."
+      "Wszystkie składniki i lód mieszamy w shakerze po czym przelewamy do szklanki typu Martini.",
+      "Drinka podajemy bez lodu i dekorujemy startą skórką z pomarańczy."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Whisky sour",
+    "image": "/images/whisky-sour.jpg",
+    "type": "Alkoholowy",
+    "glass": "Whisky glass",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "Whisky",
+        "amount": "40",
+        "counter": "ml"
+      },
+      {
+        "name": "Sok cytrynowy",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Syrop cukrowy",
+        "amount": "10",
+        "counter": "ml"
+      },
+      {
+        "name": "Jedno białko kurze",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Opcjonalnie: Zest z cytryny, cynamon, goździki i kardamon",
+        "amount": "",
+        "counter": ""
+      }
+    ],
+    "steps": [
+      "Wlewamy wszystkie składniki drinka do shakera bez lodu i wstrząsamy około dwadzieścia sekund, po czym otwieramy shaker, wrzucamy lód i znów wstrząsamy.",
+      "Całość przelewamy do schłodzonej wcześniej szklanki uzupełnionej lodem.",
+      "Na górę możemy posypać zest z cytryny, a do samego drinka można także wedle uznania dodać goździki, kardamon i cynamon."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mojito",
+    "image": "/images/mojito.jpg",
+    "type": "Alkoholowy",
+    "glass": "Cocktail glass",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "Rum jasny",
+        "amount": "40",
+        "counter": "ml"
+      },
+      {
+        "name": "Syrop cukrowy",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Dwie ćwiartki limonki",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "6 listków mięty",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Woda gazowana lub Sprite",
+        "amount": "",
+        "counter": ""
+      }
+    ],
+    "steps": [
+      "Drink przygotowywany jest bezpośrednio w szklance koktajlowej.",
+      "Ćwiartki limonki wrzucamy do szklanki z syropem cukrowym, po czym ugniatamy moździerzem do owoców.",
+      "Dodajemy liście mięty i delikatnie dogniatamy do reszty.",
+      "Uzupełniamy szklankę lodem do połowy i zalewamy rumem, po czym zalewamy szklankę do pełna wodą gazowaną lub Sprite."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Blue Lagoon",
+    "image": "/images/blue-lagoon.jpg",
+    "type": "Alkoholowy",
+    "glass": "Wysoka szklanka",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "Wódka",
+        "amount": "40",
+        "counter": "ml"
+      },
+      {
+        "name": "Likier Blue Curacao",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Sok z cytryny",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Sprite do uzupełnienia",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Opcjonalnie: Plastry cytryny lub zest z skórki cytryny",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Kostki lodu",
+        "amount": "",
+        "counter": ""
+      }
+    ],
+    "steps": [
+      "Do shakera wrzucamy kostki lodu i wlewamy wódkę, likier i sok z cytryny.",
+      "Wstrząsamy około 20 sekund i przelewamy do wysokiej szklanki zapełnionej wcześniej lodem.",
+      "Do pełna uzupełniamy Spritem i dekorujemy plastrami cytryny lub zestem z skórki tego owocu."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Blue Hawaiian",
+    "image": "/images/blue-hawaiian.jpg",
+    "type": "Alkoholowy",
+    "glass": "Cocktail glass",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "Rum biały",
+        "amount": "40",
+        "counter": "ml"
+      },
+      {
+        "name": "Likier Blue Curacao",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Sok ananasowy",
+        "amount": "60",
+        "counter": "ml"
+      },
+      {
+        "name": "Likier kokosowy",
+        "amount": "20",
+        "counter": "ml"
+      },
+      {
+        "name": "Kostki lodu",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Opcjonalnie: paski ze skórki pomarańczy",
+        "amount": "",
+        "counter": ""
+      }
+    ],
+    "steps": [
+      "Wszystkie składniki wlewamy do shakera z dodatkiem lodu i mieszamy 30 sekund.",
+      "Przelewamy zawartość do szklanek koktajlowych zapełnionych wcześniej lodem.",
+      "Dekorujemy np.",
+      "paskami ze skórki pomarańczy na górze."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Pina Colada",
+    "image": "/images/pina-colada.jpg",
+    "type": "Alkoholowy",
+    "glass": "Cocktail glass",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "Rum kokosowy np. Malibu",
+        "amount": "60",
+        "counter": "ml"
+      },
+      {
+        "name": "Sok ananasowy",
+        "amount": "120",
+        "counter": "ml"
+      },
+      {
+        "name": "Śmietanka lub gęste mleczko kokosowe",
+        "amount": "30",
+        "counter": "ml"
+      },
+      {
+        "name": "Sok z limonki",
+        "amount": "15",
+        "counter": "ml"
+      },
+      {
+        "name": "Kostki lodu",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Opcjonalnie: kawałki ananasa i limonki",
+        "amount": "",
+        "counter": ""
+      }
+    ],
+    "steps": [
+      "Koktajl przygotowujemy w blenderze kielichowym, dodajemy wszystkie składniki i mieszamy aż stanie się gładkie.",
+      "Drink przelewamy do szklanek koktajlowych i dekorujemy kawałkami ananasa i limonki."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Mimosa",
+    "image": "/images/mimosa.jpg",
+    "type": "Alkoholowy",
+    "glass": "Champagne glass",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "Szampan lub Prosecco",
+        "amount": "60",
+        "counter": "ml"
+      },
+      {
+        "name": "Sok pomarańczowy",
+        "amount": "60",
+        "counter": "ml"
+      }
+    ],
+    "steps": [
+      "Drink podajemy schłodzony - wszystkie składniki i kieliszki powinny zostać wcześniej schłodzone.",
+      "Do kieliszka do szampana wlewamy 60 ml soku z pomarańczy oraz tyle samo szampana lub Prosecco.",
+      "Proporcje szampana do soku wynoszą 1:1.",
+      "Podajemy do wypicia zaraz po przygotowaniu."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Bezalkoholowa Sangria",
+    "image": "/images/sangria.jpg",
+    "type": "Bezalkoholowy",
+    "glass": "Dzbanek/Zwykłe szklanki",
+    "ratings": [],
+    "ingredients": [
+      {
+        "name": "Wrzątek",
+        "amount": "500",
+        "counter": "ml"
+      },
+      {
+        "name": "2 torebki czarnej herbaty",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "2 kory cynamonu",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Sok z granatu",
+        "amount": "750",
+        "counter": "ml"
+      },
+      {
+        "name": "1 jabłko",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "1 pomarańcz",
+        "amount": "",
+        "counter": ""
+      },
+      {
+        "name": "Łyżka cukru",
+        "amount": "",
+        "counter": ""
+      }
+    ],
+    "steps": [
+      "W osobnej misce zalej herbatę wrzątkiem i dodaj cukier i cynamon.",
+      "Wymieszaj i odstaw na około 10 minut.",
+      "Pomarańcz i limonkę pokrój w plasterki, natomiast jabłko na kostkę.",
+      "Do wcześniej przygotowanej herbaty wlej 750 ml soku z granatu, po czym dodaj pokrojone owoce.",
+      "Całość wsadź do lodówki na ok.",
+      "4 godziny, po czym serwuj w szklankach z dodatkiem lodu."
     ]
   }
 ]
