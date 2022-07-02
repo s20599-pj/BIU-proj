@@ -9,3 +9,13 @@
 .search{
 margin: 0 auto;
 }
+.adminLogin{
+    width: 100%;
+    background-color: #61dafb;
+}
+.adminLogin form{
+    display: table;
+    margin: 0 auto;
+    background-color: #61dafb;
+    overflow: hidden;
+}

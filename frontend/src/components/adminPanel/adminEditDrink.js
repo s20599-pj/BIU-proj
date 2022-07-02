@@ -1,22 +1,30 @@
 import React, {useEffect, useState} from 'react'
 import {useForm} from "react-hook-form";
 import {useGlobalContext} from "../../globalFunctions";
-import {Link, useParams} from "react-router-dom";
+import {Link, useParams, Navigate} from "react-router-dom";
 import {coctailGlass, coctailType} from "../../utility/coctailDetailData"
+
 
 export default function EditDrink(){
     const {coctailId} = useParams();
-    const {getSpecificCoctail, saveCoctails} = useGlobalContext();
+    const {getSpecificCoctail, saveCoctails, admin} = useGlobalContext();
     const {register, handleSubmit} = useForm();
     const [tempIngredients, setTempIngredients] = useState([]);
 
     const tempCoctail = getSpecificCoctail(parseInt(coctailId));
+
 
     useEffect(() => {
         if (tempCoctail !== undefined) {
             setTempIngredients([...tempCoctail.ingredients]);
         }
     }, [])
+
+    if(!admin){
+        return (
+            <Navigate to={"/"} />
+        )
+    }
 
     const changeDrink = (data, e) => {
         e.preventDefault();
@@ -36,7 +44,6 @@ export default function EditDrink(){
 
     return(
         <div className={"addDrink"}>
-            {console.log()}
             <form onSubmit={handleSubmit(changeDrink)}>
                 <div>Nazwa drinka: <input type={"text"} {...register('name')} defaultValue={tempCoctail.name} required /></div>
                 <div>Typ drinka: <select {...register('type')} defaultValue={tempCoctail.type} required>
@@ -76,6 +83,7 @@ export default function EditDrink(){
                 </div>
                 <button type={"register btn btn-success"}
                         type={"submit"}>Zmień drinka</button>
+
             </form>
             <Link to={"/"}>Powrot do strony glownej</Link>
         </div>

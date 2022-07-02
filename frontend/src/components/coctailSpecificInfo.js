@@ -10,9 +10,17 @@ import "../styles/coctailDetails.css"
 
 export default function CoctailSpecificInfo(){
     let { coctailId } = useParams();
-    const {getSpecificCoctail} = useGlobalContext();
+    const {getSpecificCoctail, admin} = useGlobalContext();
 
     const coctailDetails = getSpecificCoctail(parseInt(coctailId));
+
+    const editCoctail = () => {
+        if(admin){
+            return(
+                <Link to={"/editCoctail/"+coctailId}>Edytuj drinka</Link>
+            )
+        }
+    }
 
     return(
                 <div key={coctailId} className={"specificCoctail"}>
@@ -28,7 +36,7 @@ export default function CoctailSpecificInfo(){
                     <ShowComments coctail={coctailDetails} />
                     <AddComment coctail={coctailDetails} />
                     <Link to={"/coctails"}>Cofnij do listy drinków</Link><br/>
-                    <Link to={"/editCoctail/"+coctailId}>Edytuj drinka</Link>
+                    {editCoctail()}
                 </div>
     )
 }

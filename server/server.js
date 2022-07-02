@@ -4,11 +4,14 @@ const app = express();
 const cors = require("cors");
 const comments = require('./data/comments.json');
 const coctails = require('./data/coctails.json');
+const admin = require('./data/admin.json');
 const server = http.createServer(app);
 const fs = require("fs");
 const bodyParser = require('body-parser')
 const path = require("path")
 const multer = require("multer")
+const bcrypt = require("bcrypt")
+
 process.env.PWD = process.cwd()
 
 const COMMENTS_PATH = process.env.PWD + '/server/data/comments.json';
@@ -45,6 +48,25 @@ const upload = multer({
         cb(null, valid);
     },
 });
+
+app.post("/api/login", (req,res) => {
+    const data = (req.body)
+    if(checkCredentials(req.body)) {
+        res.send(true)
+        console.log("Admin logged in")
+    }
+    else{
+        res.send(false);
+        console.log("Incorrect credentials")
+    }
+})
+
+app.get('/api/logout', (res, req) => {
+    res.cookies("adminLogout", true, {expire: 200})
+    res.send(true);
+    console.log("Admin logout")
+})
+
 
 app.get("/api/getCoctails", (req, res) => {
    res.send(coctails);
@@ -205,4 +227,9 @@ const createCoctail = (data, createNew) => {
         }
     }
     return coctail;
+}
+
+const checkCredentials = (credentials) => {
+    let result = bcrypt.compareSync(credentials.password, admin.password);
+    return (credentials.login === admin.login && result)
 }

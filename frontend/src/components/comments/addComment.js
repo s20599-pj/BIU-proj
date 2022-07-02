@@ -16,8 +16,8 @@ export default function AddComment({coctail}){
 
     return(
      <form className={"addComment"} onSubmit={handleSubmit(onSubmit)}>
-         <input type="text" name="author" placeholder={"Nazwa autora komentarza"} {...register('author')} />
-         <textarea name="comment_desc" cols="30" rows="10" required placeholder={"Treść komentarza"} minLength={20} {...register("description")} />
+         <input type="text" name="author" placeholder={"Nazwa autora komentarza"} {...register('author')} /><br/>
+         <textarea name="comment_desc" cols="75" rows="7" required placeholder={"Treść komentarza"} minLength={10} {...register("description")} />
          <button className={'addCommentButton'} type={"submit"}>Wyślij komentarz</button>
      </form>
     )

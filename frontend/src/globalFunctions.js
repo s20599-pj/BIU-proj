@@ -9,6 +9,7 @@ export default function GlobalContextProvider({children}){
     const [comments, setComments] = useState('');
     const [searchBar, setSearchBar] = useState('');
     const [loading, setLoading] = useState(true);
+    const [admin, setAdmin] = useState(false);
 
     useEffect(() => {
         fetch("http://localhost:3001/api/getAll")
@@ -159,6 +160,8 @@ export default function GlobalContextProvider({children}){
                 searchBar,
                 setCoctails,
                 loading,
+                admin,
+                setAdmin,
                 getSpecificCoctail,
                 getComments,
                 addComment,

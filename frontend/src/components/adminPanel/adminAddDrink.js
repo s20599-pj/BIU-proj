@@ -1,18 +1,24 @@
 import React, {useEffect, useState} from 'react'
 import {useForm} from "react-hook-form";
 import {useGlobalContext} from "../../globalFunctions";
-import {Link, useParams} from "react-router-dom";
+import {Link, Navigate, useParams} from "react-router-dom";
 import {coctailGlass, coctailType} from "../../utility/coctailDetailData"
 import "../../styles/changeCoctail.css"
 
 export default function AddDrink(){
-    const {saveCoctails} = useGlobalContext();
+    const {saveCoctails, admin} = useGlobalContext();
     const {register, handleSubmit} = useForm();
     const [tempIngredients, setTempIngredients] = useState([{
         name: "",
         amount: "",
         counter: ""
     }]);
+
+    if(!admin){
+        return (
+            <Navigate to={"/"} />
+        )
+    }
 
     const addNewIngredient = () => {
         const index = [...tempIngredients];

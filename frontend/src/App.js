@@ -1,4 +1,4 @@
-import './App.css';
+import './utility/App.css';
 import React from "react";
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
 import ShowAllCoctails from "./components/coctails";
@@ -8,6 +8,7 @@ import EditDrink from "./components/adminPanel/adminEditDrink";
 import AddDrink from "./components/adminPanel/adminAddDrink";
 import Footer from "./layout/footer";
 import Navigation from "./layout/navigation";
+import AdminLogin from "./components/adminPanel/adminLogin";
 
 function App() {
     const {loading} = useGlobalContext();
@@ -25,6 +26,7 @@ function App() {
                 <Route path={"/coctails/:coctailId"} exact element={<CoctailSpecificInfo />}/>
                 <Route path={"/editCoctail/:coctailId"} exact element={<EditDrink />} />
                 <Route path={"/addCoctail"} exact element={<AddDrink />} />
+                <Route path={"/adminLogin"} exact element={<AdminLogin />} />
             </Routes>
             <Footer />
         </BrowserRouter>
