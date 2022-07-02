@@ -9,6 +9,7 @@ import AddDrink from "./components/adminPanel/adminAddDrink";
 import Footer from "./layout/footer";
 import Navigation from "./layout/navigation";
 import AdminLogin from "./components/adminPanel/adminLogin";
+import NotFound from "./layout/404";
 
 function App() {
     const {loading} = useGlobalContext();
@@ -27,6 +28,7 @@ function App() {
                 <Route path={"/editCoctail/:coctailId"} exact element={<EditDrink />} />
                 <Route path={"/addCoctail"} exact element={<AddDrink />} />
                 <Route path={"/adminLogin"} exact element={<AdminLogin />} />
+                <Route path={"*"} exact element={<NotFound />} />
             </Routes>
             <Footer />
         </BrowserRouter>
