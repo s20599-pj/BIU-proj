@@ -1,0 +1,11 @@
+.footer{
+    clear: both;
+    background-color: lightgreen;
+    text-align: center;
+}
+.navigation{
+    background-color: lightgreen;
+}
+.search{
+margin: 0 auto;
+}

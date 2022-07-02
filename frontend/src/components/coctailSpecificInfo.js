@@ -6,6 +6,7 @@ import ShowComments from "./comments/showComments";
 import AddComment from "./comments/addComment";
 import {useGlobalContext} from '../globalFunctions';
 import Rating from "./rating";
+import "../styles/coctailDetails.css"
 
 export default function CoctailSpecificInfo(){
     let { coctailId } = useParams();
@@ -14,7 +15,7 @@ export default function CoctailSpecificInfo(){
     const coctailDetails = getSpecificCoctail(parseInt(coctailId));
 
     return(
-                <div key={coctailId}>
+                <div key={coctailId} className={"specificCoctail"}>
                     <img src={coctailDetails.image} alt={"zdjecie drinka"}/>
                     <Rating ratings={coctailDetails.ratings} coctail_id={coctailId} />
                     <p>Drink: {coctailDetails.name}</p>

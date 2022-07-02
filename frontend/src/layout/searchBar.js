@@ -1,5 +1,6 @@
 import React from 'react';
 import {useGlobalContext} from "../globalFunctions";
+import '../styles/layer.css'
 
 export default function SearchBar() {
     const {searchBar, setCoctails, setDefaultCoctails} = useGlobalContext();

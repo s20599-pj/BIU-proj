@@ -1,0 +1,15 @@
+.specificCoctail{
+    background-color: #61dafb;
+
+}
+.specificCoctail ul{
+    list-style-type: circle;
+
+}
+.specificCoctail ul li{
+    clear: both;
+    padding: 3px 20px;
+}
+img{
+    margin: 0 auto;
+}

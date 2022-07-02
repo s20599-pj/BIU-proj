@@ -35,7 +35,7 @@ export default function EditDrink(){
     }
 
     return(
-        <div className={"editDrink"}>
+        <div className={"addDrink"}>
             {console.log()}
             <form onSubmit={handleSubmit(changeDrink)}>
                 <div>Nazwa drinka: <input type={"text"} {...register('name')} defaultValue={tempCoctail.name} required /></div>

@@ -3,6 +3,7 @@ import {useForm} from "react-hook-form";
 import {useGlobalContext} from "../../globalFunctions";
 import {Link, useParams} from "react-router-dom";
 import {coctailGlass, coctailType} from "../../utility/coctailDetailData"
+import "../../styles/changeCoctail.css"
 
 export default function AddDrink(){
     const {saveCoctails} = useGlobalContext();

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import "../styles/coctailsList.css";
 import {Link} from "react-router-dom";
 import {useGlobalContext} from '../globalFunctions';
-import SearchBar from "./searchBar";
+import SearchBar from "../layout/searchBar";
 import ReactPaginate from 'react-paginate'
 
 
@@ -21,24 +21,27 @@ export default function ShowAllCoctails({itemsPerPage}){
 
     const handlePageClick = (e) => {
         const newOffset = e.selected * itemsPerPage % coctails.length;
-
+        console.log(newOffset)
         setItemOffset(newOffset);
     }
 
     return(
-        <div>
-            <Link to={"/addCoctail"}>Dodaj drinka</Link>
+        <div className={"mainPage"}>
             <SearchBar />
-            {coctails.map((coctail, index) => {
-                return (
-                    <div key={index}>
-                        <img src={coctail.image} alt={"zdjecie drinka"}/>
-                        <p>Drink: {coctail.name}</p>
-                        <p>Typ drinka: {coctail.type}</p>
-                        <p>Kliknij <Link to={`/coctails/${coctail.id}`}>tutaj</Link> aby poznać szczegóły</p>
-                    </div>
-                )
-            })}
+            <div className={"coctails"}>
+                {coctails.map((coctail, index) => {
+                    return (
+                        <div className={"coctailWrapper"}>
+                            <div key={index} className={"coctailList"}>
+                                <img src={coctail.image} alt={"zdjecie drinka"}/>
+                                <p>Drink: {coctail.name}</p>
+                                <p>Typ drinka: {coctail.type}</p>
+                                <p>Kliknij <Link to={`/coctails/${coctail.id}`}>tutaj</Link> aby poznać szczegóły</p>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
             <ReactPaginate
                 breakLabel={"..."}
                 nextLabel={"next >"}
@@ -47,6 +50,7 @@ export default function ShowAllCoctails({itemsPerPage}){
                 pageCount={pageCount}
                 previousLabel={"< previous"}
                 renderOnZeroPageCount={null}
+                className={"paginate"}
             />
         </div>
 
