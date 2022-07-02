@@ -19,6 +19,7 @@ export default function CoctailSpecificInfo(){
                     <Rating ratings={coctailDetails.ratings} coctail_id={coctailId} />
                     <p>Drink: {coctailDetails.name}</p>
                     <p>Typ drinka: {coctailDetails.type}</p>
+                    <p>Rodzaj szklanki: {coctailDetails.glass}</p>
                     <p>Skladniki do drinka:</p>
                     <Ingredient ingredientList={coctailDetails.ingredients}/>
                     <p>Jak zrobić drinka:</p>

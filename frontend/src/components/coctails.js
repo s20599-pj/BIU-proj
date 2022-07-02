@@ -27,6 +27,7 @@ export default function ShowAllCoctails({itemsPerPage}){
 
     return(
         <div>
+            <Link to={"/addCoctail"}>Dodaj drinka</Link>
             <SearchBar />
             {coctails.map((coctail, index) => {
                 return (

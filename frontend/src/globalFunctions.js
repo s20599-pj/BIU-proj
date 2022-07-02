@@ -2,7 +2,7 @@ import React, {createContext, useContext, useEffect, useState} from 'react'
 
 const GlobalContext = createContext({});
 export const useGlobalContext = () => useContext(GlobalContext);
-const LOCATION = "localhost:8080/"
+const LOCATION = "http://localhost:3000/"
 
 export default function GlobalContextProvider({children}){
     const [coctails, setCoctails] = useState(null);
@@ -123,7 +123,7 @@ export default function GlobalContextProvider({children}){
                 .then(data => {
                     if(data) {
                         setCoctails(data.coctail);
-                        window.location.href = LOCATION + "coctail/" + coctail.id;
+                        window.location.href = LOCATION + "coctails/" + coctail.id;
                     }
                     else{
                         console.log("Server side error - cannot update coctail");

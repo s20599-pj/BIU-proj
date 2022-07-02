@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Mojito",
-    "image": "/noPhoto.jpg",
+    "image": "/images/mojito.jpg",
     "type": "Alkoholowy",
     "glass": "Highball glass",
     "ingredients": [],
@@ -26,9 +26,9 @@
   {
     "id": 2,
     "name": "Pina Colada",
-    "image": "/images/pina-colada.jpg",
+    "image": "/placeholder.jpg",
     "type": "Alkoholowy",
-    "glass": "???",
+    "glass": "Highball glass",
     "ingredients": [
       {
         "name": "rum",
@@ -49,6 +49,11 @@
         "name": "Kruszony lód",
         "amount": "",
         "counter": "plastry"
+      },
+      {
+        "name": "mango",
+        "amount": "",
+        "counter": ""
       }
     ],
     "ratings": [
@@ -60,415 +65,20 @@
       5
     ],
     "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
+      "krok11krok22krok33."
     ]
   },
   {
     "id": 3,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
+    "name": "Aperol Spritz",
+    "image": "/placeholder.jpg",
     "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
-    "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
-    "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
-    "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
-    "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
-    "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
-    "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
-    "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 11,
-    "name": "Pina Colada2",
-    "image": "/images/pina-colada.jpg",
-    "type": "Alkoholowy",
-    "glass": "???",
-    "ingredients": [
-      {
-        "name": "rum",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Mleczko kokosowe",
-        "amount": "30",
-        "counter": "ml"
-      },
-      {
-        "name": "Ananas",
-        "amount": "30",
-        "counter": "plastry"
-      },
-      {
-        "name": "Kruszony lód",
-        "amount": "",
-        "counter": "plastry"
-      }
-    ],
-    "ratings": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ],
-    "steps": [
-      "krok11",
-      "krok22",
-      "krok33"
-    ]
-  },
-  {
-    "id": 12,
-    "name": "Smerfny hit",
-    "image": "/noPhoto.jpg",
-    "type": "Bezalkoholowy",
     "glass": "Highball glass",
     "ratings": [],
-    "ingredients": [
-      {
-        "name": "10",
-        "amount": "ml",
-        "counter": "sok porzeczkowy"
-      },
-      {
-        "name": "100",
-        "amount": "ml",
-        "counter": "Sprite"
-      },
-      {
-        "name": "50",
-        "amount": "ml",
-        "counter": "Fanta"
-      }
-    ],
+    "ingredients": [],
     "steps": [
-      "Zmieszaj wszystko ze sobą."
+      "Szklankę typu Lowball wypełnij kostkami lodu\nDodaj 75ml mocno schłodzonego Prosecco, 50 ml Aperolu i 25ml wody gazowanej do kieliszka.",
+      "Udekoruj drink plasterkami pomarańczy - wedle uznania."
     ]
   }
 ]

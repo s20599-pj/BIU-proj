@@ -41,23 +41,17 @@ export default function AddDrink(){
                      })
                     }
                 </select> </div>
-                <div>Rodzaj szkła: <select {...register('glass')} required>
-                    <option disabled selected />
-                    {coctailGlass.map((type, key) => {
-                        return(
-                            <option key={key} defaultValue={type}>{type}</option>
-                        )
-                    })
-                    }
-                </select> </div>
+                <div>Rodzaj szkła:
+                    <input type={"text"} {...register('glass')} required placeholder={"Podaj rodzaj szkła"} />
+                </div>
                 <div>
                     Składniki:
                     {tempIngredients.map((ingredient, key) => {
                         return(
                             <>
                                 <input type={"text"} placeholder={"Nazwa"} {...register('nameIngr' + key)} required />
-                                <input type={"text"} placeholder={"Ilość"} {...register('amount' + key)} required />
-                                <input type={"text"} placeholder={"Miara"} {...register('counter' + key)} required /><br/>
+                                <input type={"text"} placeholder={"Ilość"} {...register('amount' + key)}  />
+                                <input type={"text"} placeholder={"Miara"} {...register('counter' + key)}  /><br/>
                             </>
                         )
                     })

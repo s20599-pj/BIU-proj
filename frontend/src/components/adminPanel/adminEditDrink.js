@@ -16,7 +16,7 @@ export default function EditDrink(){
         if (tempCoctail !== undefined) {
             setTempIngredients([...tempCoctail.ingredients]);
         }
-    })
+    }, [])
 
     const changeDrink = (data, e) => {
         e.preventDefault();
@@ -36,6 +36,7 @@ export default function EditDrink(){
 
     return(
         <div className={"editDrink"}>
+            {console.log()}
             <form onSubmit={handleSubmit(changeDrink)}>
                 <div>Nazwa drinka: <input type={"text"} {...register('name')} defaultValue={tempCoctail.name} required /></div>
                 <div>Typ drinka: <select {...register('type')} defaultValue={tempCoctail.type} required>
@@ -57,13 +58,13 @@ export default function EditDrink(){
                     }
                 </select> </div>
                 <div>
-                    Składniki:
+                    Składniki:<br />
                     {tempIngredients.map((ingredient, key) => {
                         return(
                             <>
-                                <input type={"text"} defaultValue={ingredient.amount} required />
-                                <input type={"text"} defaultValue={ingredient.counter} required />
-                                <input type={"text"} defaultValue={ingredient.name} required /><br/>
+                                <input type={"text"} placeholder={"Nazwa"} {...register('nameIngr' + key)} defaultValue={ingredient.name} required />
+                                <input type={"text"} placeholder={"Ilość"} {...register('amount' + key)} defaultValue={ingredient.amount} />
+                                <input type={"text"} placeholder={"Miara"} {...register('counter' + key)} defaultValue={ingredient.counter} /><br/>
                             </>
                         )
                     })
